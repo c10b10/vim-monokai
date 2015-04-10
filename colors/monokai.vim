@@ -59,7 +59,7 @@ if has("gui_running")
   let s:line       = "#303236"
   let s:linenr     = "#8F908A"
   let s:lncolumn   = "#272924"
-  let s:darkcolumn = "#211F1C"
+  let s:darkcolumn = "#1a1816"
   let s:selection  = "#4c4f54"
   let s:comment    = "#7a7662"
   let s:error      = "#5f0000"
