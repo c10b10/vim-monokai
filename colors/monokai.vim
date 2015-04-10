@@ -189,9 +189,9 @@ exe "let s:fmt_revb      = ' ".s:vmode."=NONE".s:r.s:b.  " term=NONE".s:r.s:b."'
 " ------------
 
 " cursor
-exe "hi Cursor guifg=#000000 ctermfg=16 guibg=#0a9dff ctermbg=39 gui=bold cterm=bold"
-exe "hi vCursor guifg=#000000 ctermfg=16 guibg=#0a9dff ctermbg=39 gui=bold cterm=bold"
-exe "hi iCursor guifg=#000000 ctermfg=16 guibg=#0a9dff ctermbg=39 gui=none cterm=none"
+exe "hi Cursor guifg=#000000 ctermfg=16 guibg=#71daed ctermbg=39 gui=bold cterm=bold"
+exe "hi vCursor guifg=#000000 ctermfg=16 guibg=#71daed ctermbg=39 gui=bold cterm=bold"
+exe "hi iCursor guifg=#000000 ctermfg=16 guibg=#71daed ctermbg=39 gui=none cterm=none"
 
 " editor
 exe "hi! Normal"          .s:fg_foreground  .s:bg_background  .s:fmt_none
