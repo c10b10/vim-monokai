@@ -64,7 +64,7 @@ if has("gui_running")
   let s:comment    = "#7a7662"
   let s:error      = "#5f0000"
   let s:zentree    = "#8f8f8f"
-  
+
   let s:pink       = "#F92772"
   let s:green      = "#A6E22D"
   let s:aqua       = "#66d9ef"
@@ -91,7 +91,7 @@ else
   let s:comment    = "59"
   let s:error      = "52"
   let s:zentree    = "242"
-  
+
   let s:pink       = "197"
   let s:green      = "148"
   let s:aqua       = "81"
@@ -185,8 +185,13 @@ exe "let s:fmt_stnd      = ' ".s:vmode."=NONE".s:s.      " term=NONE".s:s    ."'
 exe "let s:fmt_revr      = ' ".s:vmode."=NONE".s:r.      " term=NONE".s:r    ."'"
 exe "let s:fmt_revb      = ' ".s:vmode."=NONE".s:r.s:b.  " term=NONE".s:r.s:b."'"
 
-" Highlighting 
+" Highlighting
 " ------------
+
+" cursor
+exe "hi Cursor guifg=#000000 ctermfg=16 guibg=#0a9dff ctermbg=39 gui=bold cterm=bold"
+exe "hi vCursor guifg=#000000 ctermfg=16 guibg=#0a9dff ctermbg=39 gui=bold cterm=bold"
+exe "hi iCursor guifg=#000000 ctermfg=16 guibg=#0a9dff ctermbg=39 gui=none cterm=none"
 
 " editor
 exe "hi! Normal"          .s:fg_foreground  .s:bg_background  .s:fmt_none
@@ -266,7 +271,7 @@ else
     exe "hi! StorageClass".s:fg_pink        .s:bg_none        .s:fmt_none
     exe "hi! Typedef"     .s:fg_pink        .s:bg_none        .s:fmt_none
 endif
-    
+
 exe "hi! Identifier"      .s:fg_green       .s:bg_none        .s:fmt_none
 exe "hi! Function"        .s:fg_green       .s:bg_none        .s:fmt_none
 
